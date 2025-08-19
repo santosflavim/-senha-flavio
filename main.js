@@ -7,20 +7,28 @@ const botoes = document.querySelectorAll('.parametro-senha__botao');
 botoes[0].onclick = diminuiTamanho;
 botoes[1].onclick = aumentaTamanho;
 
-function diminuiTamanho(){
-    if( tamanhoSenha > 1 ){
-        tamanhoSenha=tamanhoSenha-1
+function diminuiTamanho() {
+    if (tamanhoSenha > 1) {
+        tamanhoSenha = tamanhoSenha - 1
     }
-    numeroSenha.textContent=tamanhoSenha
+    numeroSenha.textContent = tamanhoSenha;
     gerasenha();
 }
 
-function aumentaTamanho(){
-    if(tamanhoSenha < 20){
-        tamanhoSenha = tamanhoSenha+1
+function aumentaTamanho() {
+    if (tamanhoSenha < 20) {
+        tamanhoSenha = tamanhoSenha + 1
     }
-    numeroSenha.textContent=tamanhoSenha;
+    numeroSenha.textContent = tamanhoSenha;
     gerasenha();
 }
+
+const campoSenha = document.querySelector('#campo-senha');
+
+const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVYXWZ';
+const letrasMinusculas = 'abcdefghijklmnopqrstuvyXwz';
+const numeros = '0123456789';
+const simbolos = '!@%?*#+/';
+gerasenha();
 
 
