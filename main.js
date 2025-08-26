@@ -38,6 +38,7 @@ gerasenha();
 
 function gerasenha() {
     let alfabeto = '';
+    
     if (checkbox[0].checked) {
         alfabeto = alfabeto + letrasMaiusculas;
     }
@@ -46,11 +47,11 @@ function gerasenha() {
         alfabeto = alfabeto + letrasMinusculas;
     }
 
-    if (checkbox[3].checked) {
+    if (checkbox[2].checked) {
         alfabeto = alfabeto + numeros;
     }
 
-    if (checkbox[4].checked) {
+    if (checkbox[3].checked) {
         alfabeto = alfabeto + simbolos;
     }
 
