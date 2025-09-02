@@ -61,6 +61,8 @@ function gerasenha() {
     }
     campoSenha.value = senha;
     classificaSenha();
+
+    
 }
 
 function classificaSenha() {
@@ -73,3 +75,6 @@ function classificaSenha() {
         forcaSenha.classList.add('fraca');
     }
 }
+
+
+
